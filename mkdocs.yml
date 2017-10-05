@@ -1,0 +1,8 @@
+site_name: Aurelia Notes
+pages:
+  - Home: index.md
+  - Bird: bird.md
+theme: readthedocs
+docs_dir: notes
+site_dir: docs
+
