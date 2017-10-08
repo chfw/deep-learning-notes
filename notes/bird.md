@@ -1,6 +1,6 @@
 # 是不是小鸟
 
-刚读完 [Machine Learning is Fun! Part 3: Deep Learning and Convolutional Neural Networks](https://medium.com/@ageitgey/machine-learning-is-fun-part-3-deep-learning-and-convolutional-neural-networks-f40359318721) 并且成功让老驴拉车了。现在记录一下中间遇到的问题和解决方案。
+刚读完[机器学习原来这么有趣！第三章:图像识别【鸟or飞机】？深度学习与卷积神经网络](https://zhuanlan.zhihu.com/p/24524583)并且成功让老驴拉车了。现在记录一下中间遇到的问题和解决方案。
 
 ![running](https://github.com/chfw/deep-learning-notes/raw/master/images/bird-1.png)
 
@@ -34,3 +34,26 @@ That's not a bird!
 |![big-bird3](https://github.com/chfw/deep-learning-notes/raw/master/images/birds/bird3.jpg)| no|
 |![big-bird4](https://github.com/chfw/deep-learning-notes/raw/master/images/birds/bird4.jpg)| no|
 |![twitter](https://github.com/chfw/deep-learning-notes/raw/master/images/birds/twitter-32x32.jpg)| no|
+
+
+## 观察
+
+### 训练过程
+
+没有GPU加速，8内核CPU的老驴拉了6个半小时才结束训练。训练程序中产生一堆中间文件
+
+```
+...
+-rw-r--r--. 1 25860168 Oct  6 00:53 bird-classifier.tfl.ckpt-7696.data-00000-of-00001
+-rw-r--r--. 1     1508 Oct  6 00:53 bird-classifier.tfl.ckpt-7696.index
+-rw-r--r--. 1   211246 Oct  6 00:53 bird-classifier.tfl.ckpt-7696.meta
+...
+```
+
+### 判断
+
+判断时间不长，得结论比训练快。
+
+
+
+英文原版：[Machine Learning is Fun! Part 3: Deep Learning and Convolutional Neural Networks](https://medium.com/@ageitgey/machine-learning-is-fun-part-3-deep-learning-and-convolutional-neural-networks-f40359318721)

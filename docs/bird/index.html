@@ -59,6 +59,12 @@
             
     <li class="toctree-l2"><a href="#_1">是不是小鸟</a></li>
     
+        <ul>
+        
+            <li><a class="toctree-l3" href="#_2">观察</a></li>
+        
+        </ul>
+    
 
     </ul>
 	    </li>
@@ -96,7 +102,7 @@
             <div class="section">
               
                 <h1 id="_1">是不是小鸟</h1>
-<p>刚读完 <a href="https://medium.com/@ageitgey/machine-learning-is-fun-part-3-deep-learning-and-convolutional-neural-networks-f40359318721">Machine Learning is Fun! Part 3: Deep Learning and Convolutional Neural Networks</a> 并且成功让老驴拉车了。现在记录一下中间遇到的问题和解决方案。</p>
+<p>刚读完<a href="https://zhuanlan.zhihu.com/p/24524583">机器学习原来这么有趣！第三章:图像识别【鸟or飞机】？深度学习与卷积神经网络</a>并且成功让老驴拉车了。现在记录一下中间遇到的问题和解决方案。</p>
 <p><img alt="running" src="https://github.com/chfw/deep-learning-notes/raw/master/images/bird-1.png" /></p>
 <ol>
 <li>训练数据并不是从CIFAR-10下载，而是从作者的<a href="https://medium.com/@ageitgey/good-question-a095787c12f1">AWS下载</a>。数据大小是450MB。</li>
@@ -153,6 +159,19 @@ That's not a bird!
 </tr>
 </tbody>
 </table>
+<h2 id="_2">观察</h2>
+<h3 id="_3">训练过程</h3>
+<p>没有GPU加速，8内核CPU的老驴拉了6个半小时才结束训练。训练程序中产生一堆中间文件</p>
+<pre><code>...
+-rw-r--r--. 1 25860168 Oct  6 00:53 bird-classifier.tfl.ckpt-7696.data-00000-of-00001
+-rw-r--r--. 1     1508 Oct  6 00:53 bird-classifier.tfl.ckpt-7696.index
+-rw-r--r--. 1   211246 Oct  6 00:53 bird-classifier.tfl.ckpt-7696.meta
+...
+</code></pre>
+
+<h3 id="_4">判断</h3>
+<p>判断时间不长，得结论比训练快。</p>
+<p>英文原版：<a href="https://medium.com/@ageitgey/machine-learning-is-fun-part-3-deep-learning-and-convolutional-neural-networks-f40359318721">Machine Learning is Fun! Part 3: Deep Learning and Convolutional Neural Networks</a></p>
               
             </div>
           </div>
