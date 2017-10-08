@@ -103,13 +103,56 @@
 <li>训练脚本不能在PYTHON 3下运行。PYTHON2.7可用。</li>
 <li>这些是运行所需的PYTHON库：</li>
 </ol>
-<pre><code>tflearn
-tensorflow
-h5py
-scipy
+<pre><code>tflearn==0.3.2
+tensorflow==1.3.0
+h5py==2.7.1
+scipy==0.19.1
 </code></pre>
 
-<p>..静待更新</p>
+<p>抓小鸟图测试：</p>
+<p>运行<a href="https://gist.github.com/ageitgey/a40dded08e82e59724c70da23786bbf0">小鸟测试程序</a>:</p>
+<pre><code class="shell">$ python are_you_a_bird.py deep-learning-notes/images/birds/twitter-32x32.jpg 
+That's not a bird!
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>小鸟</th>
+<th>测试结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="bird1" src="https://github.com/chfw/deep-learning-notes/raw/master/images/birds/bird-32x32.png" /></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><img alt="bird2" src="https://github.com/chfw/deep-learning-notes/raw/master/images/birds/bird2-32x32.png" /></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><img alt="big-bird" src="https://github.com/chfw/deep-learning-notes/raw/master/images/birds/bird.jpg" /></td>
+<td>yes</td>
+</tr>
+<tr>
+<td><img alt="big-bird2" src="https://github.com/chfw/deep-learning-notes/raw/master/images/birds/bird2.jpg" /></td>
+<td>yes</td>
+</tr>
+<tr>
+<td><img alt="big-bird3" src="https://github.com/chfw/deep-learning-notes/raw/master/images/birds/bird3.jpg" /></td>
+<td>no</td>
+</tr>
+<tr>
+<td><img alt="big-bird4" src="https://github.com/chfw/deep-learning-notes/raw/master/images/birds/bird4.jpg" /></td>
+<td>no</td>
+</tr>
+<tr>
+<td><img alt="twitter" src="https://github.com/chfw/deep-learning-notes/raw/master/images/birds/twitter-32x32.jpg" /></td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div>
