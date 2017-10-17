@@ -54,6 +54,14 @@ That's not a bird!
 
 判断时间不长，得结论比训练快。
 
+## 后话
 
+鄙人很幸运能在一台专业的机器学习的机器上运行一下这个学习程序，深刻地体会了一下gpu加速有什么样的帮助。
+
+![running](https://github.com/chfw/deep-learning-notes/raw/master/images/bird-2.png)
+
+同样的程序，需要把tensorflow卸下，改装tensorflow-gpu。它再把计算分布到4个Nvidea Titan gpu上。效果很好，产生12倍的计算加速，原先6个半小时(270分钟)的等待变成21分钟。以上是截图。
+
+我是遵从这个cuda指导进行的[计算加速](https://www.nvidia.com/en-us/data-center/gpu-accelerated-applications/tensorflow/)。
 
 英文原版：[Machine Learning is Fun! Part 3: Deep Learning and Convolutional Neural Networks](https://medium.com/@ageitgey/machine-learning-is-fun-part-3-deep-learning-and-convolutional-neural-networks-f40359318721)
