@@ -1,4 +1,4 @@
-site_name: Aurelia Notes
+site_name: Deep Learning Notes
 pages:
   - Home: index.md
   - Bird: bird.md
